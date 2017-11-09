@@ -1,0 +1,72 @@
+syntax="proto3";
+
+package Messages;
+
+enum RequestType {
+
+    SEARCH_FOR_CATALOGS = 0;
+    FIND_CATALOG = 1;
+    UPDATE_CATALOG_PRICE = 2;
+    UPDATE_CATALOG_COUNT = 3;
+    BUY_BOOK = 4;
+    GET_CATALOG = 5;
+}
+
+// REQUEST TO SERVERS
+
+message Request {
+    
+    RequestType type = 1;
+}
+
+message RequestByQuery {
+    
+    RequestType requestType = 1;
+    string query = 2;
+}
+
+message RequestById {
+
+    RequestType requestType = 1;
+    int32 id = 2;
+}
+
+message UpdateCatalogCount {
+
+    RequestType requestType = 1;
+    int32 id = 2;
+    int32 count = 3;
+}
+
+message UpdateBookPrice {
+    
+    RequestType requestType = 1;
+    int32 id = 2;
+    float price = 3;
+}
+
+// RESPONSE FROM SERVERS
+
+message Catalog {
+
+    int32 id = 1;
+    Book book = 2;
+    int32 count = 3;
+    float price = 4;
+}
+
+message Catalogs {
+
+    repeated Catalog items = 1;
+}
+
+message Books {
+
+    repeated Book books = 1;
+}
+
+message Book {
+    
+    string name = 1;
+}
+ 

@@ -1,0 +1,19 @@
+{
+  "name": "livraria_udp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "front.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dgram": "*",
+    "express": "^4.15.4",
+    "mongodb": "^2.2.31",
+    "ping": "^0.2.2",
+    "protocol-buffers": "*",
+    "system-sleep": "^1.3.6"
+  },
+  "author": "",
+  "license": "ISC"
+}

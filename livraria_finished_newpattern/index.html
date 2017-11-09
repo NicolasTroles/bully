@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cliente</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="cont">
+		<input type="text" ng-model="idCompra"> <button ng-click="comprar()">Compra de Produto</button>
+		<br><br>
+		<input type="text" ng-model="produtoProcura"> <button ng-click="procura()">Procurar (nome)</button>
+		<br><br>
+		<input type="text" ng-model="idProcura"> <button ng-click="detalhe()">Detalhes (id)</button>
+	</div>
+</body>
+</html>

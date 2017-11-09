@@ -1,0 +1,29 @@
+message Procura {
+  required string nome = 1;
+}
+
+message Detalhes {
+  required int32 id = 1;
+}
+
+message Compra {
+  required int32 id = 1;
+}
+
+message AtualizaPreco {
+  required int32 id = 1;
+  required float preco = 2;
+}
+
+message AtualizaEstoque {
+  required int32 id = 1;
+}
+
+message Padrao {
+  required string func = 1;
+  string nome = 2;
+  int32 id = 3;
+  string preco = 4;
+  bool erro = 5;
+  sint32 qtd = 6;
+}

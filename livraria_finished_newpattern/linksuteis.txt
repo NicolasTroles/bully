@@ -1,0 +1,13 @@
+sobre o res do app:
+http://nomadev.com.br/node-js-qual-a-diferen%C3%A7a-entre-res-write-res-send-e-res-json/
+insert e update mongodb:
+https://mongodb.github.io/node-mongodb-native/markdown-docs/insert.html
+filesystem nodejs(fs): 
+https://www.sitepoint.com/accessing-the-file-system-in-node-js/
+https://nodejs.org/api/fs.html#fs_fs_open_path_flags_mode_callback
+protocol-buffers:
+https://github.com/mafintosh/protocol-buffers
+https://developers.google.com/protocol-buffers/docs/proto
+https://developers.google.com/protocol-buffers/docs/overview
+restful sv:
+http://www.restapitutorial.com/lessons/httpmethods.html
